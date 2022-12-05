@@ -20,7 +20,9 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <DataGrid x:Name="DataSource"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" AutoGenerateColumns="False">
+               
                 <DataGrid.Columns>
+                    
                     <DataGridTextColumn Header="ID" Width="*" Binding="{Binding Path=Id }"></DataGridTextColumn>
                     <DataGridTextColumn Header="User Name" Width="*" Binding="{Binding Path=UserName }"></DataGridTextColumn>
                     <DataGridTextColumn Header="Password" Width="*" Binding="{Binding Path= Password }"></DataGridTextColumn>
@@ -28,6 +30,7 @@
                     <DataGridTextColumn Header="Date Registration" Width="*" Binding="{Binding Path=datereg }"></DataGridTextColumn>
                     <DataGridTextColumn Header="Las Online Date" Width="*" Binding="{Binding Path= lastonline }"></DataGridTextColumn>
                 </DataGrid.Columns>
+                
             </DataGrid>
         </Grid>
         <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Stretch">

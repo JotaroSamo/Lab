@@ -1,4 +1,5 @@
-﻿using Lab.Page;
+﻿using Lab.Method;
+using Lab.Page;
 using LAB2.Method;
 using LAB2.Page;
 using System;
@@ -23,9 +24,9 @@ namespace Lab
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
+
        
-        WorkBD get;
         public MainWindow mainWindow;
         public MainWindow()
         {
@@ -47,8 +48,9 @@ namespace Lab
         }
         private void SettingCon(object sender, RoutedEventArgs e)
         {
-            frame.NavigationService.Navigate(new SettingCon());
+            frame.NavigationService.Navigate(new ConnectionPage());
         }
+       
 
         //public void Refresh()
         //{

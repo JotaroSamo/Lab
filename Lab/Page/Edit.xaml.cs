@@ -40,8 +40,6 @@ namespace LAB2.Page
         private void ADDNewUser(object sender, RoutedEventArgs e)
         {
             mainWindow.frame.Navigate(new AddUser(edit));
-            //Add add= new Add(edit);
-            //add.Show();
         }
         public void Refresh()
         {

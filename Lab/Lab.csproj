@@ -68,6 +68,7 @@
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
@@ -117,7 +118,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Page\SettingCon.xaml">
+    <Page Include="Page\ConnectionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,6 +146,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Method\ConnectionSetting.cs" />
     <Compile Include="Method\WorkBD.cs" />
     <Compile Include="Page\AddUser.xaml.cs">
       <DependentUpon>AddUser.xaml</DependentUpon>
@@ -152,8 +154,8 @@
     <Compile Include="Page\Edit.xaml.cs">
       <DependentUpon>Edit.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\SettingCon.xaml.cs">
-      <DependentUpon>SettingCon.xaml</DependentUpon>
+    <Compile Include="Page\ConnectionPage.xaml.cs">
+      <DependentUpon>ConnectionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page\SettingFront.xaml.cs">
       <DependentUpon>SettingFront.xaml</DependentUpon>

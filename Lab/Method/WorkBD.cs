@@ -37,7 +37,7 @@ namespace LAB2.Method
         {
             using (UserContext db = new UserContext())
             {
-                string ret = JsonSerializer.Serialize(db.Users.Where(c => c.UserName == item));
+                string ret = JsonSerializer.Serialize(db.Users.Where(c => c.UserName == item||c.Password==item||c.Status==item));
                 return ret;
             }
         }
@@ -45,7 +45,7 @@ namespace LAB2.Method
         {
             using (UserContext db = new UserContext())
             {
-                User user = db.Users.Where(c => c.Id == id).First() ;
+                User user = db.Users.Find(id) ;
                 return user;
             }
         }

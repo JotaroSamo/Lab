@@ -28,7 +28,7 @@
                     
                 <MenuItem Header="Setting">
                     <MenuItem Header="Setting Front"></MenuItem>     
-                    <MenuItem Header="Setting Conection" ></MenuItem>
+                    <MenuItem Header="Setting Conection" Click="SettingCon" ></MenuItem>
                 </MenuItem>
             </Menu>
         </Grid>

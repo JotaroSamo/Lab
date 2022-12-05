@@ -60,10 +60,10 @@ namespace LAB2.Page
 
         private void ButtonEdit(object sender, RoutedEventArgs e)
         {
-            //User user=DataSource.SelectedItem as User;
-            //try { Add add = new Add(edit, user.Id); 
-            //    add.Show(); }
-            //catch (Exception) {}
+            User user=DataSource.SelectedItem as User;
+            mainWindow.frame.Navigate(new AddUser(edit,user.Id));
+            
+         
         }
 
         private void ButtonDelete(object sender, RoutedEventArgs e)

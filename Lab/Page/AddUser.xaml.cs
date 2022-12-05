@@ -24,7 +24,7 @@ namespace Lab.Page
     /// <summary>
     /// Логика взаимодействия для AddUser.xaml
     /// </summary>
-    public partial class AddUser 
+    public partial class AddUser
     {
         public AddUser(Edit edit)
         {
@@ -45,19 +45,21 @@ namespace Lab.Page
         {
             InitializeComponent();
             ID = id;
-            Lablenotgood.Visibility = Visibility.Collapsed;
-            Lablegood.Visibility = Visibility.Collapsed;
+            Edit= edit;
             ch = false;
             WorkBD = new WorkBD();
-            User user = JsonSerializer.Deserialize<User>(WorkBD.ISearch(id));
+            User user = WorkBD.ISearch(id);
             Lbox.Text = user.UserName;
             Pbox.Text = user.Password;
             Cbox.Text = user.Status;
+            Lablenotgood.Visibility = Visibility.Collapsed;
+            Lablegood.Visibility = Visibility.Collapsed;
+            SaveB.Visibility = Visibility.Visible;
         }
 
         private void ButtonSave(object sender, RoutedEventArgs e)
         {
-            if (Lablegood.Visibility == Visibility.Visible && CheckPassword(Pbox.Text.Trim()))
+            if (CheckPassword(Pbox.Text.Trim()))
             {
                 WorkBD = new WorkBD();
                 User user;

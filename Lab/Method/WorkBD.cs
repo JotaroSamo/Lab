@@ -41,12 +41,12 @@ namespace LAB2.Method
                 return ret;
             }
         }
-        public string ISearch(int id)
+        public User ISearch(int id)
         {
             using (UserContext db = new UserContext())
             {
-                string ret = JsonSerializer.Serialize(db.Users.Where(c => c.Id == id));
-                return ret;
+                User user = db.Users.Where(c => c.Id == id).First() ;
+                return user;
             }
         }
         public void Save(User user,bool a)
@@ -60,8 +60,11 @@ namespace LAB2.Method
                 }
                 else
                 {
-                   
-                    db.Entry(user).State = EntityState.Modified;
+                   User user1= db.Users.Find(user.Id);
+                   user1.UserName=user.UserName;
+                    user1.Password=user.Password;
+                    user1.Status=user.Status;
+                    db.Entry(user1).State = EntityState.Modified;
                 }
                 db.SaveChanges();
 

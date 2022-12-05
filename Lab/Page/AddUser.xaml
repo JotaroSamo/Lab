@@ -7,15 +7,16 @@
       mc:Ignorable="d" 
       Title="AddUser" Height="300" Width="300" ScrollViewer.VerticalScrollBarVisibility="Auto">
 
-    <Grid Height="300" Width="300">
-        <TextBox HorizontalAlignment="Center" Margin="0,37,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,104,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266"/>
-        <ComboBox HorizontalAlignment="Center" Margin="0,171,0,0" VerticalAlignment="Top"  Width="266" Height="36" SelectedIndex="0">
+   
+    <Grid Margin="10,3,10,23">
+        <TextBox HorizontalAlignment="Center" Margin="0,37,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" Name="Lbox" TextChanged="Lbox_TextChanged"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,104,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" Name="Pbox"/>
+        <ComboBox HorizontalAlignment="Center" Margin="0,171,0,0" VerticalAlignment="Top"  Width="266" Height="36" SelectedIndex="0" Name="Cbox">
             <ComboBoxItem Content="User"/>
             <ComboBoxItem Content="Admin"/>
         </ComboBox>
-        <Button Content="Save" HorizontalAlignment="Center" Margin="0,237,0,0" VerticalAlignment="Top" Height="35" Width="168"/>
-
-
+        <Button Content="Save" HorizontalAlignment="Center"  Name="SaveB" Margin="0,237,0,0" VerticalAlignment="Top" Height="35" Width="168" Click="ButtonSave"/>
+        <Label  HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Name="Lablegood" Content="Good" Foreground="#FF00FF1B"/>
+        <Label  HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Name="Lablenotgood" Content="Not good" Foreground="Red"/>
     </Grid>
 </Page>

@@ -23,6 +23,8 @@ namespace Lab
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+       
         WorkBD get;
         public MainWindow mainWindow;
         public MainWindow()
@@ -31,6 +33,7 @@ namespace Lab
             mainWindow=this;
             frame.NavigationService.Navigate(new Edit(mainWindow));
             //  Refresh();
+          
         }
 
         private void OpenEdit(object sender, RoutedEventArgs e)

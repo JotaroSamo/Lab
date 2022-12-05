@@ -1,5 +1,5 @@
 ﻿using Lab;
-
+using Lab.Page;
 using LAB2.DB.DBCONTEXT;
 using LAB2.Method;
 using System;
@@ -39,9 +39,9 @@ namespace LAB2.Page
 
         private void ADDNewUser(object sender, RoutedEventArgs e)
         {
-
-           AddUser add= new AddUser(edit);
-            add.Show();
+            mainWindow.frame.Navigate(new AddUser(edit));
+            //Add add= new Add(edit);
+            //add.Show();
         }
         public void Refresh()
         {
@@ -60,10 +60,10 @@ namespace LAB2.Page
 
         private void ButtonEdit(object sender, RoutedEventArgs e)
         {
-            User user=DataSource.SelectedItem as User;
-            try { AddUser add = new AddUser(edit, user.Id); 
-                add.Show(); }
-            catch (Exception) {}
+            //User user=DataSource.SelectedItem as User;
+            //try { Add add = new Add(edit, user.Id); 
+            //    add.Show(); }
+            //catch (Exception) {}
         }
 
         private void ButtonDelete(object sender, RoutedEventArgs e)

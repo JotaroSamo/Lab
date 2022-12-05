@@ -12,7 +12,7 @@
             <GradientStop Color="#FF525252" Offset="0.988"/>
         </LinearGradientBrush>
     </Window.Background>
-    <Grid HorizontalAlignment="Center" Width="900" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-6">
+    <Grid HorizontalAlignment="Stretch" RenderTransformOrigin="0.5,0.5" >
         <Grid.RowDefinitions>
             <RowDefinition Height="2*">
             </RowDefinition>
@@ -20,16 +20,21 @@
 
             </RowDefinition>
         </Grid.RowDefinitions>
-        <Menu Margin="0,2,0,0">
-               
-            <MenuItem Header="Edit" Click="OpenEdit"></MenuItem>
-                
-            <MenuItem Header="Setting">
-                <MenuItem Header="Setting Front"></MenuItem>     
-                <MenuItem Header="Setting Conection" ></MenuItem>
-            </MenuItem>
-        </Menu>
+        <Grid Margin="0 0 0 5" x:Name="HightMenuGrid" MinHeight="65" MaxHeight="200" VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Stretch">
 
-        <Frame x:Name="frame" RenderTransformOrigin="1,0" Margin="0,5,0,10" Grid.Row="1" NavigationUIVisibility="Hidden" />
+            <Menu >
+                   
+                <MenuItem Header="Edit" Click="OpenEdit"></MenuItem>
+                    
+                <MenuItem Header="Setting">
+                    <MenuItem Header="Setting Front"></MenuItem>     
+                    <MenuItem Header="Setting Conection" ></MenuItem>
+                </MenuItem>
+            </Menu>
+        </Grid>
+
+        <Grid Margin="0,5,0,10" Grid.Row="1">
+            <Frame x:Name="frame" RenderTransformOrigin="1,0"  Grid.Row="1" NavigationUIVisibility="Hidden" />
+        </Grid>
     </Grid>
 </Window>

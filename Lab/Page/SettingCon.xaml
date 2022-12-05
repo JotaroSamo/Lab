@@ -9,6 +9,6 @@
       Title="SettingCon">
 
     <Grid>
-        
+        <Label x:Name="lables"></Label>
     </Grid>
 </Page>

@@ -110,31 +110,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Page\AddUser.xaml">
+    <Page Include="Pages\AddUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\Edit.xaml">
+    <Page Include="Pages\Edit.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Page\ConnectionPage.xaml">
+    <Page Include="Pages\ConnectionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\SettingFront.xaml">
+    <Page Include="Pages\FrontPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Page\Themes\Brushes.xaml">
+    <Page Include="Pages\Themes\Brushes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Page\Themes\Core.xaml">
+    <Page Include="Pages\Themes\Core.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Page\Themes\Icons.xaml">
+    <Page Include="Pages\Themes\Icons.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -147,18 +147,20 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Method\ConnectionSetting.cs" />
+    <Compile Include="Method\FrontEditor.cs" />
+    <Compile Include="Method\NavigationMenu.cs" />
     <Compile Include="Method\WorkBD.cs" />
-    <Compile Include="Page\AddUser.xaml.cs">
+    <Compile Include="Pages\AddUser.xaml.cs">
       <DependentUpon>AddUser.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\Edit.xaml.cs">
+    <Compile Include="Pages\Edit.xaml.cs">
       <DependentUpon>Edit.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\ConnectionPage.xaml.cs">
+    <Compile Include="Pages\ConnectionPage.xaml.cs">
       <DependentUpon>ConnectionPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\SettingFront.xaml.cs">
-      <DependentUpon>SettingFront.xaml</DependentUpon>
+    <Compile Include="Pages\FrontPage.xaml.cs">
+      <DependentUpon>FrontPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="DB\DBCONTEXT\User.cs" />
     <Compile Include="DB\UserContext.cs" />

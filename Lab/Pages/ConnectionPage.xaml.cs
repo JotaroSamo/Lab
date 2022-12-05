@@ -14,12 +14,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Lab.Page
+namespace Lab.Pages
 {
     /// <summary>
     /// Логика взаимодействия для SettingCon.xaml
     /// </summary>
-    public partial class ConnectionPage
+    public partial class ConnectionPage:Page
     {
 
         ConnectionSetting con;

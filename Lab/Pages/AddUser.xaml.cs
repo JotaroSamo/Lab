@@ -1,7 +1,7 @@
 ﻿using LAB2.DB.DBCONTEXT;
 using LAB2.DB;
 using LAB2.Method;
-using LAB2.Page;
+using LAB2.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,12 +19,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Lab.Page
+namespace Lab.Pages
 {
     /// <summary>
     /// Логика взаимодействия для AddUser.xaml
     /// </summary>
-    public partial class AddUser
+    public partial class AddUser:Page
     {
         public AddUser(Edit edit)
         {

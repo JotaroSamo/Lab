@@ -1,5 +1,5 @@
 ﻿using Lab;
-using Lab.Page;
+using Lab.Pages;
 using LAB2.DB.DBCONTEXT;
 using LAB2.Method;
 using System;
@@ -18,12 +18,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LAB2.Page
+namespace LAB2.Pages
 {
     /// <summary>
     /// Логика взаимодействия для Edit.xaml
     /// </summary>
-    public partial class Edit
+    public partial class Edit:Page
     {
         WorkBD get;
   

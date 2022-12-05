@@ -1,7 +1,7 @@
 ﻿using Lab.Method;
-using Lab.Page;
+using Lab.Pages;
 using LAB2.Method;
-using LAB2.Page;
+using LAB2.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +33,6 @@ namespace Lab
             InitializeComponent();
             mainWindow=this;
             frame.NavigationService.Navigate(new Edit(mainWindow));
-            //  Refresh();
           
         }
 
@@ -44,27 +43,11 @@ namespace Lab
 
         private void SettingFront(object sender, RoutedEventArgs e)
         {
-            frame.NavigationService.Navigate(new Setting());
+            //frame.NavigationService.Navigate(new FrontPage(mainWindow));
         }
         private void SettingCon(object sender, RoutedEventArgs e)
         {
             frame.NavigationService.Navigate(new ConnectionPage());
         }
-       
-
-        //public void Refresh()
-        //{
-        //    try
-        //    {
-        //        get = new GetSourse();
-        //        var source= JsonSerializer.Deserialize<User[]>(get.Get());
-        //        GridLab.ItemsSource = source;
-        //    }
-        //    catch (Exception)
-        //    {
-
-
-        //    }
-
     }
 }

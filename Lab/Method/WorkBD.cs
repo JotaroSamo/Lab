@@ -1,6 +1,6 @@
 ﻿using LAB2.DB;
 using LAB2.DB.DBCONTEXT;
-using LAB2.Page;
+using LAB2.Pages;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

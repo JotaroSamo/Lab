@@ -6,8 +6,8 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Page/Themes/Brushes.xaml" />
-                <ResourceDictionary Source="Page/Themes/Core.xaml" />
+                <ResourceDictionary Source="Pages/Themes/Brushes.xaml" />
+                <ResourceDictionary Source="Pages/Themes/Core.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

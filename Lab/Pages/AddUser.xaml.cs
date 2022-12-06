@@ -34,6 +34,7 @@ namespace Lab.Pages
             Lablegood.Visibility = Visibility.Collapsed;
             SaveB.Visibility = Visibility.Collapsed;
             ch = true;
+            PTbox.Visibility = Visibility.Visible;
         }
 
         WorkBD WorkBD;
@@ -55,6 +56,7 @@ namespace Lab.Pages
             Lablenotgood.Visibility = Visibility.Collapsed;
             Lablegood.Visibility = Visibility.Collapsed;
             SaveB.Visibility = Visibility.Visible;
+            PTbox.Visibility = Visibility.Collapsed;
         }
 
         private void ButtonSave(object sender, RoutedEventArgs e)
@@ -66,12 +68,23 @@ namespace Lab.Pages
                 if (ch == false)
                 {
                     user = new User() { Id = ID, UserName = Lbox.Text, Password = Pbox.Text, Status = Cbox.Text };
+                    WorkBD.Save(user, ch);
                 }
                 else
                 {
-                    user = new User() { UserName = Lbox.Text, Password = Pbox.Text, Status = Cbox.Text, datereg = DateTime.Now, lastonline = DateTime.Now };
+                    if (PTbox.Text==Pbox.Text)
+                    {
+                        user = new User() { UserName = Lbox.Text, Password = Pbox.Text, Status = Cbox.Text, datereg = DateTime.Now, lastonline = DateTime.Now };
+                        WorkBD.Save(user, ch);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Password don`t match!!");
+                    }
+
+                   
                 }
-                WorkBD.Save(user, ch);
+              
                 Edit.Refresh();
 
             }

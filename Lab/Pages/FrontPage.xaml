@@ -8,7 +8,7 @@
       d:DesignHeight="900" d:DesignWidth="1200"
       Title="Setting" ShowsNavigationUI="false">
 
-    <Grid>
+    <!--<Grid>
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
             <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
                
@@ -49,7 +49,7 @@
                                     <StackPanel Orientation="Vertical">
                                         <Slider
                                 x:Name="SliderSize"
-                                ValueChanged="SliderSize_ValueChanged"
+                                ValueChanged="SliderSize_ValueChanged" 
                                 Margin="20"
                                 Value="20"
                                 Minimum="1"
@@ -95,5 +95,5 @@
 
         </ScrollViewer>
 
-    </Grid>
+    </Grid>-->
 </Page>

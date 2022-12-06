@@ -7,10 +7,11 @@
       mc:Ignorable="d" 
       Title="AddUser" Height="300" Width="300" ScrollViewer.VerticalScrollBarVisibility="Auto">
 
-   
+
     <Grid Margin="10,3,10,23">
         <TextBox HorizontalAlignment="Stretch" Margin="0,37,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" Name="Lbox" TextChanged="Lbox_TextChanged"/>
-        <TextBox HorizontalAlignment="Stretch" Margin="0,104,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" Name="Pbox"/>
+        <TextBox Margin="7,84,7,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" Name="Pbox"/>
+        <TextBox Margin="4,132,10,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" Name="PTbox"/>
         <ComboBox HorizontalAlignment="Stretch" Margin="0,171,0,0" VerticalAlignment="Top"  Width="266" Height="36" SelectedIndex="0" Name="Cbox">
             <ComboBoxItem Content="User"/>
             <ComboBoxItem Content="Admin"/>
